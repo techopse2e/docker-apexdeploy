@@ -29,4 +29,5 @@ RUN apk add --update \
     cp /opt/go/bin/force /usr/local/bin/ && \
     curl -L https://github.com/AGWA/git-crypt/archive/debian/$VERSION.tar.gz | tar zxv -C /var/tmp && \
     cd /var/tmp/git-crypt-debian-$VERSION && make && make install PREFIX=/usr/local && rm -rf /var/tmp/* && \
-    apk del make openssl-dev 
+    apk del make openssl-dev
+ 
